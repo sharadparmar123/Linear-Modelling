@@ -63,9 +63,9 @@ if nav == "Model Run":
         
         st.header("Linear Modelling")
         if st.button('Run Linear Model'):
-            model = sm.ols('Propperday ~ STWmehrs_Imputed + Meandraft', train).fit()
+            model = sm.ols('Propperday ~ STWmehrs_Imputed + Meandraft', data=train).fit()
             st.write(model.params)
-            predicted=model.predict(test)
+            predicted=model.predict(pd.dataFrame(test['STWmehrs_Imputed']['Meandraft']))
             #result = pd.concat([test,predicted], axis=1)
             result=test
             result['Predict']=predicted
