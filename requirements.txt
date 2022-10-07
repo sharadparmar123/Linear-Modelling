@@ -1,0 +1,8 @@
+h2o==3.36.1.4
+matplotlib==3.5.2
+numpy==1.23.1
+pandas==1.4.3
+plotly==5.10.0
+python_dateutil==2.8.2
+scikit_learn==1.1.2
+streamlit==1.12.2
