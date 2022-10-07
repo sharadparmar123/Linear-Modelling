@@ -41,8 +41,8 @@ if nav == "Model Run":
         st.session_state.dataframeTrain = pd.read_csv(uploaded_file) 
     if st.checkbox("Show Dataset"):
         st.table(st.session_state.dataframeTrain.head(8))
-        st.session_state.dependent= st.selectbox("Dependent variables are:" ,st.session_state.dataframeTrain.columns)
-        st.session_state.independent= st.multiselect("Independent variables are:" ,st.session_state.dataframeTrain.columns)
+        #st.session_state.dependent= st.selectbox("Dependent variables are:" ,st.session_state.dataframeTrain.columns)
+        #st.session_state.independent= st.multiselect("Independent variables are:" ,st.session_state.dataframeTrain.columns)
         df=st.session_state.dataframeTrain
         ShipName= st.multiselect("Ship Names To Filter:" ,df.Shipname.unique())
         df=df[df['Shipname'].isin(ShipName)]
