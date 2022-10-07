@@ -5,18 +5,12 @@ from matplotlib import pyplot as plt
 from plotly import graph_objs as go
 from sklearn.linear_model import LinearRegression
 import numpy as np 
-import h2o
-from h2o.automl import H2OAutoML
 import webbrowser
 from contextlib import contextmanager
 from io import StringIO
-from threading import current_thread
-import sys
-import bokeh
 from datetime import date
 from dateutil.relativedelta import relativedelta
 import datetime
-from h2o.estimators.glm import H2OGeneralizedLinearEstimator
 import statsmodels.formula.api as sm
 
 
